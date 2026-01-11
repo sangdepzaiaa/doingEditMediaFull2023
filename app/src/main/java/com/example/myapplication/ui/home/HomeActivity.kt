@@ -59,8 +59,9 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(
                             true
                         }
                         R.id.menu_delete -> {
-                            val dialogItemDelete = DialogItemDelete(this@HomeActivity)
-                            dialogItemDelete.show()
+                            DialogItemDelete(this@HomeActivity, item) { itemToDelete ->
+                                viewModel.deleteImage(itemToDelete) // Gọi ViewModel
+                            }.show()
                             true
                         }
                         else -> false

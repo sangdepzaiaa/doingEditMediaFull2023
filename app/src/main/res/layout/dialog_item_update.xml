@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/bg_round_8_border"
+        android:textColor="@color/black"
         android:backgroundTint="@color/color_00C40D"
         android:text="@string/update" />
 

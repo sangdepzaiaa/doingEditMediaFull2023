@@ -2,6 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bg_round_8_border"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
         android:id="@+id/tvClose"
@@ -23,6 +25,7 @@
         android:layout_margin="30dp"/>
 
     <TextView
+        android:id="@+id/tvYes"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:background="@drawable/bg_round_8_border"
@@ -36,6 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
+        android:id="@+id/tvNo"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:background="@drawable/bg_round_8_border"

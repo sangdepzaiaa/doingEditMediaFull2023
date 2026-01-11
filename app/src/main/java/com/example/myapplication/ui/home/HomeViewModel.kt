@@ -88,4 +88,9 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         }
         return file
     }
+    fun deleteImage(item: ImageEntity) {
+        viewModelScope.launch(Dispatchers.IO) {
+            imageDao.delete(item)
+        }
+    }
 }
