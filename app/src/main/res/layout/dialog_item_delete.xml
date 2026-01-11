@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="20dp"
+    android:layout_height="wrap_content"
+
     android:background="@drawable/bg_round_8_border"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
@@ -26,28 +26,32 @@
 
     <TextView
         android:id="@+id/tvYes"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
         android:background="@drawable/bg_round_8_border"
         android:backgroundTint="@color/color_00C40D"
         android:text="@string/yes"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="18sp"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/tvText"
+        app:layout_constraintEnd_toStartOf="@+id/tvNo"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="30dp"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/tvNo"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:background="@drawable/bg_round_8_border"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_round_8_1b1b1b"
         android:text="@string/no"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="18sp"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/tvText"
+        app:layout_constraintStart_toEndOf="@+id/tvYes"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="30dp"
         app:layout_constraintEnd_toEndOf="parent"/>
 

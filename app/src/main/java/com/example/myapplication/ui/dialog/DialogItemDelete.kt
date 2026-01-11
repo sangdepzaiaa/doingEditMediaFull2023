@@ -20,5 +20,8 @@ class DialogItemDelete(
             onConfirmDelete(item)
             dismiss()
         }
+        binding.tvClose.tap {
+            dismiss()
+        }
     }
 }
